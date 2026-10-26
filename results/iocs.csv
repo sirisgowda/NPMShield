@@ -1,0 +1,88 @@
+sample,type,value,confidence,category
+2024-09-20-duckc2-api-v1.0.0,domain,raw.githubusercontent.com,observed,legitimate service
+2024-09-20-duckc2-api-v1.0.0,url,http://anonymouse.org/cgi-bin/anon-www.cgi/,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,anonymouse.org,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://coccoc.com/search#query=,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,coccoc.com,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://ddosvn.somee.com/f5.php?v=,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,ddosvn.somee.com,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://devlog.gregarius.net/docs/ua,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,devlog.gregarius.net,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://downforeveryoneorjustme.com/,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,downforeveryoneorjustme.com,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://engadget.search.aol.com/search?q=,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,engadget.search.aol.com,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://engadget.search.aol.com/search?q=query?=query=&q=,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://eu.battle.net/wow/en/search?q=,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,eu.battle.net,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://filehippo.com/search?q=,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,filehippo.com,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://funnymama.com/search?q=,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,funnymama.com,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://gais.cs.ccu.edu.tw/robot.php,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,gais.cs.ccu.edu.tw,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://go.mail.ru/search?gay.ru.query=1&q=?abc.r&q=,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,go.mail.ru,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://go.mail.ru/search?gay.ru.query=1&q=?abc.r/,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://go.mail.ru/search?mail.ru=1&q=,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://grub.org,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,grub.org,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://help.baidu.com/searchResult?keywords=,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,help.baidu.com,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://help.yahoo.com/help/us/ysearch/slurp,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,help.yahoo.com,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://host-tracker.com/check_page/?furl=,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,host-tracker.com,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,url,http://ip-api.com/json/,code-string,legitimate service
+2024-09-20-duckc2-api-v1.0.0,domain,ip-api.com,code-string,legitimate service
+2024-09-20-duckc2-api-v1.0.0,url,http://itch.io/search?q=,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,domain,itch.io,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,07.24.0.3,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.0.154.39,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.0.154.42,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.0.154.43,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.0.154.46,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.0.154.48,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.0.154.50,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.0.154.53,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.0.154.55,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.0.154.59,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.0.156.0,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.19.161.5,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.5.0.1,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.5.0.10,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.5.0.11,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.5.0.12,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.5.0.2,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.5.0.3,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.5.0.4,code-string,attacker-controlled
+2024-09-20-duckc2-api-v1.0.0,ip,1.5.0.5,code-string,attacker-controlled
+2024-11-20-spid-gc-config-v5.1.4,domain,ipinfo.io,observed,legitimate service
+2024-11-20-spid-gc-config-v5.1.4,domain,discord.com,observed,legitimate service
+2024-11-20-spid-gc-config-v5.1.4,url,https://discord.com/api/webhooks/1306068586086793297/<redacted>,hardcoded-webhook,attacker-controlled
+2024-11-20-spid-gc-config-v5.1.4,url,https://ipinfo.io/json,code-string,legitimate service
+2025-05-25-blocks-nextjs-v9999.9999.10000,domain,geyybafvoogqfnn3xmadws172y8pwskh.oastify.com,observed,attacker-controlled
+2025-06-19-mattermost-hardware-keyboard-v1.0.0,domain,bp4lqfam2mw2ha36kfd6ehcvemke84wt.oastify.com,observed,attacker-controlled
+2025-07-08-tailwind-base-theme-v1.0.0,url,https://ip-check-server.vercel.app/api/ip-check/208,observed,attacker-controlled
+2025-07-08-tailwind-base-theme-v1.0.0,domain,ip-check-server.vercel.app,observed,attacker-controlled
+2025-08-13-epc-node-web-client-v10.0.0,domain,wvzo30h2.h1.ci,observed,attacker-controlled
+2025-08-13-epc-node-web-client-v10.0.0,decoded_string,https://wvzo30h2.h1.ci:8843/,decoded,attacker-controlled
+2025-09-14-graphql-sequelize-teselagen-v5.3.8,domain,registry.npmjs.org,observed,legitimate service
+2025-09-14-graphql-sequelize-teselagen-v5.3.8,domain,api.github.com,observed,legitimate service
+2025-09-14-graphql-sequelize-teselagen-v5.3.8,domain,sts.us-east-1.amazonaws.com,observed,legitimate service
+2025-09-14-graphql-sequelize-teselagen-v5.3.8,connect_target,169.254.169.254:80,observed,legitimate service
+2025-09-14-graphql-sequelize-teselagen-v5.3.8,url,http://docs.sequelizejs.com/en/latest/docs/querying/,code-string,attacker-controlled
+2025-09-14-graphql-sequelize-teselagen-v5.3.8,domain,docs.sequelizejs.com,code-string,attacker-controlled
+2025-09-15-ng-imports-checker-v0.0.9,domain,registry.npmjs.org,observed,legitimate service
+2025-09-15-ng-imports-checker-v0.0.9,domain,api.github.com,observed,legitimate service
+2025-09-15-ng-imports-checker-v0.0.9,domain,sts.us-east-1.amazonaws.com,observed,legitimate service
+2025-09-15-ng-imports-checker-v0.0.9,connect_target,169.254.169.254:80,observed,legitimate service
+2025-09-15-ng-imports-checker-v0.0.9,url,http://art-ws.org,code-string,attacker-controlled
+2025-09-15-ng-imports-checker-v0.0.9,domain,art-ws.org,code-string,attacker-controlled
+2025-11-17-calculator-40ed-v4.0.0,url,https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/,observed,attacker-controlled
+2025-11-17-calculator-40ed-v4.0.0,domain,vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com,observed,attacker-controlled
+2025-11-17-calculator-40ed-v4.0.0,url,https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/UFJFVFRZX05BTUU9IkRlYmlhbiBHTlUvTGludXggMTIgKGJvb2t3b3JtKSIKTkFNRT0iRGViaWFuIEdOVS9MaW51eCIKVkVSU0lPTl9JRD0iMTIiClZFUlNJT049IjEyIChib29rd29ybSkiClZFUlNJT05fQ09ERU5BTUU9Ym9va3dvcm0KSUQ9ZGViaWFuCkhPTUVfVVJMPSJodHRwczovL3d3dy5kZWJpYW4ub3JnLyIKU1VQUE9,observed,attacker-controlled
+2025-11-17-calculator-40ed-v4.0.0,domain,betsh1pquv6xorejopwm361en5txho5d.oastify.com,observed,attacker-controlled
+2025-11-17-calculator-40ed-v4.0.0,url,https://betsh1pquv6xorejopwm361en5txho5d.oastify.com/?q=,code-string,attacker-controlled
+lodash-4.18.1,url,https://npms.io/search?q=ponyfill,code-string,attacker-controlled
+lodash-4.18.1,domain,npms.io,code-string,attacker-controlled

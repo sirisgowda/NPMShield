@@ -1,0 +1,14 @@
+sample,label,score,verdict,rules
+2024-09-20-duckc2-api-v1.0.0,malicious,100,malicious,BASE64_DECODE CHILD_PROCESS HARDCODED_URL_IP HIGH_ENTROPY HOST_FINGERPRINT NET_MODULE OBFUSCATION PARSE_FAIL SENSITIVE_PATH
+2024-11-20-spid-gc-config-v5.1.4,malicious,50,suspicious,HARDCODED_URL_IP HOST_FINGERPRINT INSTALL_HOOK NET_MODULE
+2025-03-25-epic-comment-rating-v1.0.0,malicious,0,low,
+2025-05-25-blocks-nextjs-v9999.9999.10000,malicious,20,low,HIGH_ENTROPY NET_MODULE
+2025-06-19-mattermost-hardware-keyboard-v1.0.0,malicious,60,suspicious,HOST_FINGERPRINT INSTALL_HOOK NET_MODULE SENSITIVE_PATH
+2025-07-08-tailwind-base-theme-v1.0.0,malicious,20,low,ENV_ACCESS EVAL
+2025-08-13-epc-node-web-client-v10.0.0,malicious,55,suspicious,HARDCODED_URL_IP INSTALL_B64 INSTALL_HOOK INSTALL_INLINE
+2025-09-14-graphql-sequelize-teselagen-v5.3.8,malicious,40,suspicious,BASE64_DECODE HARDCODED_URL_IP INSTALL_HOOK
+2025-09-15-ng-imports-checker-v0.0.9,malicious,30,low,HARDCODED_URL_IP INSTALL_HOOK
+2025-11-17-calculator-40ed-v4.0.0,malicious,100,malicious,BASE64_DECODE ENV_ACCESS ENV_DUMP HARDCODED_URL_IP INSTALL_B64 INSTALL_HOOK INSTALL_NET NET_MODULE
+2025-12-18-npe-toolkit-server-deps-v1.0.0,malicious,0,low,
+2026-01-28-monorepo-cop-v9.9.0,malicious,0,low,
+2026-05-19-echarts-for-react-v3.0.7,malicious,0,low,

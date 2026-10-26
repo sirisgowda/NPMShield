@@ -1,0 +1,361 @@
+[
+  {
+    "sample": "axios-1.20.0",
+    "label": "benign",
+    "root": "../samples/extracted_benign/axios-1.20.0/package",
+    "profiles": {
+      "laptop": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [
+          "form-data",
+          "https-proxy-agent",
+          "follow-redirects",
+          "form-data",
+          "https-proxy-agent",
+          "follow-redirects"
+        ],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [
+          "form-data",
+          "https-proxy-agent",
+          "follow-redirects",
+          "form-data",
+          "https-proxy-agent",
+          "follow-redirects"
+        ],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [],
+    "dynamic_score": 0,
+    "dynamic_verdict": "low",
+    "static_score": 60,
+    "gap": "STATIC-ONLY"
+  },
+  {
+    "sample": "chalk-6.0.1",
+    "label": "benign",
+    "root": "../samples/extracted_benign/chalk-6.0.1/package",
+    "profiles": {
+      "laptop": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [],
+    "dynamic_score": 0,
+    "dynamic_verdict": "low",
+    "static_score": 0,
+    "gap": ""
+  },
+  {
+    "sample": "debug-4.4.3",
+    "label": "benign",
+    "root": "../samples/extracted_benign/debug-4.4.3/package",
+    "profiles": {
+      "laptop": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [
+          "supports-color",
+          "ms",
+          "supports-color",
+          "ms"
+        ],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [
+          "supports-color",
+          "ms",
+          "supports-color",
+          "ms"
+        ],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [],
+    "dynamic_score": 0,
+    "dynamic_verdict": "low",
+    "static_score": 20,
+    "gap": ""
+  },
+  {
+    "sample": "express-5.2.1",
+    "label": "benign",
+    "root": "../samples/extracted_benign/express-5.2.1/package",
+    "profiles": {
+      "laptop": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [
+          "body-parser",
+          "merge-descriptors",
+          "finalhandler",
+          "debug",
+          "debug",
+          "content-type",
+          "etag",
+          "mime-types",
+          "proxy-addr",
+          "qs",
+          "once",
+          "router",
+          "router",
+          "accepts",
+          "type-is",
+          "fresh",
+          "range-parser",
+          "parseurl",
+          "proxy-addr",
+          "content-disposition",
+          "http-errors",
+          "depd",
+          "encodeurl",
+          "escape-html",
+          "on-finished",
+          "mime-types",
+          "statuses",
+          "cookie-signature",
+          "cookie",
+          "send",
+          "vary",
+          "serve-static",
+          "body-parser",
+          "merge-descriptors",
+          "finalhandler",
+          "debug",
+          "debug",
+          "content-type",
+          "etag",
+          "mime-types",
+          "proxy-addr",
+          "qs",
+          "once",
+          "router",
+          "router",
+          "accepts",
+          "type-is",
+          "fresh",
+          "range-parser",
+          "parseurl",
+          "proxy-addr",
+          "content-disposition",
+          "http-errors",
+          "depd",
+          "encodeurl",
+          "escape-html",
+          "on-finished",
+          "mime-types",
+          "statuses",
+          "cookie-signature",
+          "cookie",
+          "send",
+          "vary",
+          "serve-static"
+        ],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [
+          "body-parser",
+          "merge-descriptors",
+          "finalhandler",
+          "debug",
+          "debug",
+          "content-type",
+          "etag",
+          "mime-types",
+          "proxy-addr",
+          "qs",
+          "once",
+          "router",
+          "router",
+          "accepts",
+          "type-is",
+          "fresh",
+          "range-parser",
+          "parseurl",
+          "proxy-addr",
+          "content-disposition",
+          "http-errors",
+          "depd",
+          "encodeurl",
+          "escape-html",
+          "on-finished",
+          "mime-types",
+          "statuses",
+          "cookie-signature",
+          "cookie",
+          "send",
+          "vary",
+          "serve-static",
+          "body-parser",
+          "merge-descriptors",
+          "finalhandler",
+          "debug",
+          "debug",
+          "content-type",
+          "etag",
+          "mime-types",
+          "proxy-addr",
+          "qs",
+          "once",
+          "router",
+          "router",
+          "accepts",
+          "type-is",
+          "fresh",
+          "range-parser",
+          "parseurl",
+          "proxy-addr",
+          "content-disposition",
+          "http-errors",
+          "depd",
+          "encodeurl",
+          "escape-html",
+          "on-finished",
+          "mime-types",
+          "statuses",
+          "cookie-signature",
+          "cookie",
+          "send",
+          "vary",
+          "serve-static"
+        ],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [],
+    "dynamic_score": 0,
+    "dynamic_verdict": "low",
+    "static_score": 15,
+    "gap": ""
+  },
+  {
+    "sample": "lodash-4.18.1",
+    "label": "benign",
+    "root": "../samples/extracted_benign/lodash-4.18.1/package",
+    "profiles": {
+      "laptop": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {},
+        "execs": [],
+        "net": [],
+        "hosts": [],
+        "urls": [],
+        "files": [],
+        "stubbed": [],
+        "exit": [
+          "install_exit=0",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [],
+    "dynamic_score": 0,
+    "dynamic_verdict": "low",
+    "static_score": 20,
+    "gap": ""
+  }
+]

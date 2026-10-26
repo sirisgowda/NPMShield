@@ -1,0 +1,6 @@
+sample,label,score,verdict,rules
+axios-1.20.0,benign,60,suspicious,BASE64_DECODE ENV_ACCESS NET_MODULE OBFUSCATION SENSITIVE_PATH
+chalk-6.0.1,benign,0,low,
+debug-4.4.3,benign,20,low,ENV_ACCESS ENV_DUMP
+express-5.2.1,benign,15,low,ENV_ACCESS NET_MODULE
+lodash-4.18.1,benign,20,low,HARDCODED_URL_IP HIGH_ENTROPY

@@ -1,0 +1,19 @@
+sample,label,static,dynamic,fused,verdict,canary_override,gap,detected_with_gap_rule,inert,static_rules,dynamic_flags,env_differs
+2024-09-20-duckc2-api-v1.0.0,malicious,100,50,70,malicious,False,,True,False,BASE64_DECODE CHILD_PROCESS HARDCODED_URL_IP HIGH_ENTROPY HOST_FINGERPRINT NET_MODULE OBFUSCATION PARSE_FAIL SENSITIVE_PATH,DNS_LOOKUP RUNS_NPM,False
+2024-11-20-spid-gc-config-v5.1.4,malicious,50,35,41,suspicious,False,,True,False,HARDCODED_URL_IP HOST_FINGERPRINT INSTALL_HOOK NET_MODULE,DNS_LOOKUP,False
+2025-03-25-epic-comment-rating-v1.0.0,malicious,0,0,0,low,False,,False,True,,,False
+2025-05-25-blocks-nextjs-v9999.9999.10000,malicious,20,35,29,low,False,static-clean / dynamic-flagged,True,False,HIGH_ENTROPY NET_MODULE,DNS_LOOKUP,False
+2025-06-19-mattermost-hardware-keyboard-v1.0.0,malicious,60,35,45,suspicious,False,,True,False,HOST_FINGERPRINT INSTALL_HOOK NET_MODULE SENSITIVE_PATH,DNS_LOOKUP,False
+2025-07-08-tailwind-base-theme-v1.0.0,malicious,20,35,29,low,False,static-clean / dynamic-flagged,True,False,ENV_ACCESS EVAL,NETWORK_INTENT,False
+2025-08-13-epc-node-web-client-v10.0.0,malicious,55,35,43,suspicious,False,,True,False,HARDCODED_URL_IP INSTALL_B64 INSTALL_HOOK INSTALL_INLINE,DNS_LOOKUP,False
+2025-09-14-graphql-sequelize-teselagen-v5.3.8,malicious,40,100,80,malicious,True,,True,False,BASE64_DECODE HARDCODED_URL_IP INSTALL_HOOK,CRED_ACCESS DNS_LOOKUP NETWORK_CONNECT,False
+2025-09-15-ng-imports-checker-v0.0.9,malicious,30,100,80,malicious,True,static-clean / dynamic-flagged,True,False,HARDCODED_URL_IP INSTALL_HOOK,CRED_ACCESS DNS_LOOKUP NETWORK_CONNECT,False
+2025-11-17-calculator-40ed-v4.0.0,malicious,100,60,76,malicious,False,,True,False,BASE64_DECODE ENV_ACCESS ENV_DUMP HARDCODED_URL_IP INSTALL_B64 INSTALL_HOOK INSTALL_NET NET_MODULE,DNS_LOOKUP SUSPICIOUS_EXEC,False
+2025-12-18-npe-toolkit-server-deps-v1.0.0,malicious,0,0,0,low,False,,False,True,,,False
+2026-01-28-monorepo-cop-v9.9.0,malicious,0,0,0,low,False,,False,True,,,False
+2026-05-19-echarts-for-react-v3.0.7,malicious,0,0,0,low,False,,False,True,,,False
+axios-1.20.0,benign,60,0,24,low,False,static-flagged / dynamic-clean,False,False,BASE64_DECODE ENV_ACCESS NET_MODULE OBFUSCATION SENSITIVE_PATH,,False
+chalk-6.0.1,benign,0,0,0,low,False,,False,True,,,False
+debug-4.4.3,benign,20,0,8,low,False,,False,False,ENV_ACCESS ENV_DUMP,,False
+express-5.2.1,benign,15,0,6,low,False,,False,False,ENV_ACCESS NET_MODULE,,False
+lodash-4.18.1,benign,20,0,8,low,False,,False,False,HARDCODED_URL_IP HIGH_ENTROPY,,False

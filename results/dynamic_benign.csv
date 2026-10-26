@@ -1,0 +1,6 @@
+sample,label,static,dynamic,verdict,env_differs,gap,flags
+axios-1.20.0,benign,60,0,low,False,STATIC-ONLY,
+chalk-6.0.1,benign,0,0,low,False,,
+debug-4.4.3,benign,20,0,low,False,,
+express-5.2.1,benign,15,0,low,False,,
+lodash-4.18.1,benign,20,0,low,False,,

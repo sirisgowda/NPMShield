@@ -1,0 +1,144 @@
+[
+  {
+    "sample": "axios-1.20.0",
+    "root": "../samples/extracted_benign/axios-1.20.0/package",
+    "name": "axios",
+    "version": "1.20.0",
+    "install_scripts": {},
+    "hits": {
+      "BASE64_DECODE": [
+        "lib/helpers/estimateDataURLDecodedBytes.js",
+        "lib/helpers/fromDataURI.js",
+        "lib/helpers/toURLEncodedForm.js"
+      ],
+      "ENV_ACCESS": [
+        "lib/helpers/shouldBypassProxy.js",
+        "dist/node/axios.cjs"
+      ],
+      "NET_MODULE": [
+        "lib/helpers/Http2Sessions.js: ['http2']",
+        "lib/adapters/http.js: ['http', 'http2', 'https']",
+        "dist/node/axios.cjs: ['http', 'http2', 'https']"
+      ],
+      "SENSITIVE_PATH": [
+        "lib/core/mergeConfig.js: Credentials",
+        "lib/core/buildFullPath.js: credentials",
+        "lib/adapters/xhr.js: Credentials"
+      ],
+      "OBFUSCATION": [
+        "dist/axios.min.js (longest line 63303)",
+        "dist/esm/axios.min.js (longest line 51264)"
+      ]
+    },
+    "iocs": {
+      "urls": [],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 76,
+    "parse_failures": 0,
+    "score": 60,
+    "verdict": "suspicious",
+    "label": "benign"
+  },
+  {
+    "sample": "chalk-6.0.1",
+    "root": "../samples/extracted_benign/chalk-6.0.1/package",
+    "name": "chalk",
+    "version": "6.0.1",
+    "install_scripts": {},
+    "hits": {},
+    "iocs": {
+      "urls": [],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 5,
+    "parse_failures": 0,
+    "score": 0,
+    "verdict": "low",
+    "label": "benign"
+  },
+  {
+    "sample": "debug-4.4.3",
+    "root": "../samples/extracted_benign/debug-4.4.3/package",
+    "name": "debug",
+    "version": "4.4.3",
+    "install_scripts": {},
+    "hits": {
+      "ENV_ACCESS": [
+        "src/node.js",
+        "src/browser.js"
+      ],
+      "ENV_DUMP": [
+        "src/node.js"
+      ]
+    },
+    "iocs": {
+      "urls": [],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 4,
+    "parse_failures": 0,
+    "score": 20,
+    "verdict": "low",
+    "label": "benign"
+  },
+  {
+    "sample": "express-5.2.1",
+    "root": "../samples/extracted_benign/express-5.2.1/package",
+    "name": "express",
+    "version": "5.2.1",
+    "install_scripts": {},
+    "hits": {
+      "NET_MODULE": [
+        "lib/application.js: ['node:http']",
+        "lib/response.js: ['node:http']",
+        "lib/utils.js: ['node:http']"
+      ],
+      "ENV_ACCESS": [
+        "lib/application.js"
+      ]
+    },
+    "iocs": {
+      "urls": [],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 7,
+    "parse_failures": 0,
+    "score": 15,
+    "verdict": "low",
+    "label": "benign"
+  },
+  {
+    "sample": "lodash-4.18.1",
+    "root": "../samples/extracted_benign/lodash-4.18.1/package",
+    "name": "lodash",
+    "version": "4.18.1",
+    "install_scripts": {},
+    "hits": {
+      "HIGH_ENTROPY": [
+        "_unicodeWords.js: \\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a...",
+        "lodash.min.js: \\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a...",
+        "lodash.js: \\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a..."
+      ],
+      "HARDCODED_URL_IP": [
+        "https://npms.io/search?q=ponyfill."
+      ]
+    },
+    "iocs": {
+      "urls": [
+        "https://npms.io/search?q=ponyfill."
+      ],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 1048,
+    "parse_failures": 0,
+    "score": 20,
+    "verdict": "low",
+    "label": "benign"
+  }
+]

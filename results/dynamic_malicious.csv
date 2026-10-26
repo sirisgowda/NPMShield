@@ -1,0 +1,14 @@
+sample,label,static,dynamic,verdict,env_differs,gap,flags
+2024-09-20-duckc2-api-v1.0.0,malicious,100,50,suspicious,False,,DNS_LOOKUP RUNS_NPM
+2024-11-20-spid-gc-config-v5.1.4,malicious,50,35,suspicious,False,,DNS_LOOKUP
+2025-03-25-epic-comment-rating-v1.0.0,malicious,0,0,low,False,,
+2025-05-25-blocks-nextjs-v9999.9999.10000,malicious,20,35,suspicious,False,"STATIC-CLEAN, DYNAMIC-FLAGGED",DNS_LOOKUP
+2025-06-19-mattermost-hardware-keyboard-v1.0.0,malicious,60,35,suspicious,False,,DNS_LOOKUP
+2025-07-08-tailwind-base-theme-v1.0.0,malicious,20,35,suspicious,False,"STATIC-CLEAN, DYNAMIC-FLAGGED",NETWORK_INTENT
+2025-08-13-epc-node-web-client-v10.0.0,malicious,55,35,suspicious,False,,DNS_LOOKUP
+2025-09-14-graphql-sequelize-teselagen-v5.3.8,malicious,40,100,malicious,False,,CRED_ACCESS DNS_LOOKUP NETWORK_CONNECT
+2025-09-15-ng-imports-checker-v0.0.9,malicious,30,100,malicious,False,"STATIC-CLEAN, DYNAMIC-FLAGGED",CRED_ACCESS DNS_LOOKUP NETWORK_CONNECT
+2025-11-17-calculator-40ed-v4.0.0,malicious,100,60,suspicious,False,,DNS_LOOKUP SUSPICIOUS_EXEC
+2025-12-18-npe-toolkit-server-deps-v1.0.0,malicious,0,0,low,False,,
+2026-01-28-monorepo-cop-v9.9.0,malicious,0,0,low,False,,
+2026-05-19-echarts-for-react-v3.0.7,malicious,0,0,low,False,,

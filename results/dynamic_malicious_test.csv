@@ -1,0 +1,2 @@
+sample,label,static,dynamic,verdict,env_differs,gap,flags
+2025-11-17-calculator-40ed-v4.0.0,malicious,100,60,suspicious,False,,DNS_LOOKUP SUSPICIOUS_EXEC

